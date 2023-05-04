@@ -3,14 +3,25 @@
   padding: 0;
 }
 
-.skrollcontainer{
-  height: 90%;
-  overflow: scroll;
+
+
+.skrollable {
+  position:fixed;
+  z-index:100;
+}
+.skrollr-mobile .skrollable {
+  position:absolute;
+}
+.skrollable .skrollable {
+  position:absolute;
 }
 
+.skrollable .skrollable .skrollable {
+  position:static;
+}
 
 #skrollr-body {
-  height: 120%;
+  height: 100%;
   position: relative;
   width: 100%;
   background-color: red;
