@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+
+    <script src="js/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/style1.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bg">
+
+        <main class="pantalla1" data-0="opacity: 1;" data-400="opacity: 0;">
+
+            <div class="containerfotoindex">
+                <img class="rectanglerosa" src="./recursos/index/Rectangle1ROSAFONDO.jpg" alt="">
+                <img class="rectangle1" data-0="transform: translateX(0px);  opacity:1;"
+                    data-150="transform: translateX(200px);  opacity:0;" src="./recursos/index/Rectangle 1.png" alt="">
+                <img class="rectangle4" data-0="transform: translateY(0px);  opacity:1;"
+                    data-150="transform: translateY(200px);  opacity:0;" src="./recursos/index/Rectangle 4.png" alt="">
+                <img class="rectangle5" data-0="transform: translatex(0px);  opacity:1;"
+                    data-150="transform: translatex(-200px);  opacity:0;" src="./recursos/index/Rectangle 5.png" alt="">
+                <img class="rectangle6" data-0="transform: translatey(0px);  opacity:1;"
+                    data-150="transform: translatey(-200px);  opacity:0;" src="./recursos/index/Rectangle 6.png" alt="">
+            </div>
+
+        </main>
+        <div class="pantalla2">
+            <div class="boxtextindex">
+                <!-- <p class="textindex2" data-200=" opacity:0;" data-640="opacity:0;" data-650="opacity:1; color: rgba(254, 254, 254, 0.897); ;
+            font-size: 30px;" data-1400="opacity:1; color: rgba(254, 254, 254, 0.897);;
+            font-size: 30px;" data-1500="opacity:1; color: rgba(100, 100, 100, 100.897);" data-1600="opacity:1; color: rgba(0, 0, 0, 0.897); font-weight: 400;
+            font-size: 55px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; trópico</p> -->
+                <p class="textindexa textsticky" data-450="width:0%; opacity:0; color: rgba(32, 30, 30, 0.897);"
+                    data-800="width:100%; opacity:1;"> 
+                    <span 
+                    data-450="width:0%; opacity:0; color: rgba(32, 30, 30, 0.897);"
+                    data-500="width:100%; opacity:1;" data-1480="opacity:1;" data-1560="opacity:0;">"En el
+                    </span>
+                    <span  data-1599="color: rgba(32, 30, 30, 0.897);"
+                    data-1600="color: rgba(255, 215, 0, 1);">trópico </span> <span data-450="width:0%; opacity:0; color: rgba(32, 30, 30, 0.897);"
+                        data-530="width:100%; opacity:1;"  data-1480="opacity:1;" data-1560="opacity:0;">el
+                        tiempo</span> </p>
+                <p class="textindexb" data-790="width:0%; opacity:0; color: rgba(32, 30, 30, 0.897);"
+                    data-1140="width:100%; opacity:1;" data-1480="opacity:1;" data-1700="opacity:0;">no es una medida
+                    precisa</p>
+                <p class="textindexc" data-1130="width:0%; opacity:0; color: rgba(32, 30, 30, 0.897);"
+                    data-1480="width:100%; opacity:1;" data-1700="opacity:0;"> sino una
+                    emoción imprecisa" </p>
+                <!-- 
+                <p class="textindex1" data-800="width:0%; opacity:0;" data-1000="width:100%; opacity:1;">"En el trópico,
+                    el
+                    tiempo no es una medida precisa, sino una emoción imprecisa" </p> -->
+            </div>
+            <div class="boxtextindex2">
+
+                <p class="textindexa">"En el trópico el tiempo</p>
+                <p class="textindexb">no es una medida precisa</p>
+                <p class="textindexc"> sino una emoción imprecisa" </p>
+
+            </div>
+
+        </div>
+        <div class="pantalla3">
+            <div class="cuadrotiulo">
+                <header class="headeri">
+                    <nav>
+                        <ul class="listmenu">
+                            <li class="linkfotos button" onclick="myFunction()"><a class="linkmenu" href="#">F o t o
+                                    s</a>
+                            </li>
+
+                            <li class="linkfechas"><a class="linkmenu" href="#">F e c h a s</a></li>
+
+                            <li class="linkbio"><a class="linkmenu" href="./paginas/bio.html">B i o</a></li>
+
+                            <li class="linksonidos"><a class="linkmenu" href="./paginas/sonidos.html">S o n i d o s</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </header>
+                <div class="marcotitulo1">
+                    <h1 class="tropico">TROPICO</h1>
+                </div>
+                <div class="marcotitulo2">
+                    <h2 class="galaxia">GALAXIA</h2>
+                </div>
+            </div>
+        </div>
+        <footer class="foot">
+            <ul class="listfoot">
+                <li><a href="#"><img class="iconos" src="./recursos/Icons/spotify.svg" alt="iconos de Spotify"></a>
+                </li>
+
+                <li><a href="#"><img class="iconos" src="./recursos/Icons/youtube.svg" alt="icono de Youtube"></a></li>
+                <li><a href="#"><img class="iconos" src="./recursos/Icons/instagram.svg" alt="icono de Instagram"></a>
+                </li>
+            </ul>
+        </footer>
+        <script>
+            function myFunction() {
+
+                const headeri = document.querySelector(".headeri");
+                headeri.classList.toggle("animacion-index");
+
+                const linkmenu = document.querySelectorAll(".linkmenu");
+                for (let i = 0; i < linkmenu.length; i++) {
+                    linkmenu[i].classList.toggle("animacion-menu");
+                }
+
+                const background = document.querySelector(".background");
+                background.classList.toggle("animacion-back");
+
+
+                setTimeout(function () {
+                    window.location.href = "./paginas/fotos.html"; // dirige al enlace después de que finalice la animación
+                }, 1500);
+            }
+        </script>
+
+        <script>
+            var s = skrollr.init();
+            forceHeight: false
+        </script>
+</body>
+
+</html>
