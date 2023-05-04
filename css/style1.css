@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-
+/*
 
 .skrollable {
   position:fixed;
@@ -18,7 +18,7 @@
 
 .skrollable .skrollable .skrollable {
   position:static;
-}
+}*/
 
 #skrollr-body {
   height: 100%;
