@@ -28,10 +28,10 @@
 }
 .bg {
 position: relative;
-  min-height: 100vh;
+  min-height: 150vh;
   min-width: 100vh;
-  background-color: #ffe3ef;
-
+ 
+ background-image: linear-gradient(0deg, rgba(210, 190, 153, .1) 5%,  rgba(209, 254, 254, 1)100%,rgb(109, 216, 207) );
 }
 
 .tropico {
@@ -62,6 +62,12 @@ position: relative;
   text-align: center;
   color: #9C9C9C;
   width: 250px;
+
+  margin-left: 20px;
+  
+  top: 220px;
+
+  position: fixed;
 }
 
 .cuadrotiulo {
@@ -100,13 +106,28 @@ position: relative;
   border-left: 0;
 }
 
+.trop{
+  background: linear-gradient(90deg, rgba(210, 153, 197, 0.885), rgba(209, 254, 254, 0.688));
+  ;
+  background-clip: text;
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-name: movfondo;
+    animation-duration: 80s ;
+    animation-iteration-count: infinite;
+    background-position: 0%;
+    background-size: 200%;
+
+}
 
 .containerfotoindex {
-  position: fixed;
-  margin: auto;
-  width: 350px;
-  height: 400px;
-top: 200px;
+top: 15%;
+position: absolute;
+width: 600px;
+left: 0; 
+right: 0; 
+margin: auto; 
+z-index: -1;  
 }
 
 .rectanglerosa{
@@ -320,15 +341,24 @@ top: 200px;
 
 /*-----PANTALLA2----*/
 .pantalla1{
-  background: rgba(255,227,239,1);
-  min-height: 900px;
-  min-width: 100vh;
+/*   background: rgba(255,227,239,1); */
+  
+  min-height: 2000px;
+  min-width: 100%;
+  position: fixed;
+  background: hsla(334, 100%, 95%, 1);
+
+background: linear-gradient(90deg, hsla(334, 100%, 95%, 1) 80%, hsla(180, 96%, 91%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(334, 100%, 95%, 1) 80%, hsla(180, 96%, 91%, .5) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(334, 100%, 95%, 1) 80%, hsla(180, 96%, 91%, .5) 100%);
 }
 
 .pantalla2{
  
   background: linear-gradient(180deg, rgba(255,227,239,1) 0%, rgba(255,255,255,1) 100%);
-  min-height: 1400px;
+  min-height: 2800px;
   min-width: 100vh;
 
 }
@@ -416,7 +446,6 @@ top: 200px;
 }
 .textindexa {
   margin-left: 20px;
- 
   font-size:30px;
   top: 160px;
   box-sizing: border-box;
@@ -427,13 +456,14 @@ top: 200px;
   color: rgba(60, 58, 48, 0.53);
   /*height: 80px;*/
   white-space: nowrap;
-  	overflow: hidden;
+  overflow: hidden;
+  position: fixed;
 }
 .textindexb {
   margin-left: 15px;  
-  /* position: sticky; */
+   position: sticky; 
   font-size:30px;
-  top: 160px;
+  top: 190px;
   box-sizing: border-box;
   font-family: 'Roboto';
   font-style: normal;
@@ -447,9 +477,9 @@ top: 200px;
 }
 .textindexc {
   
-  /* position: sticky; */
+  position: sticky;
   font-size:30px;
-  top: 160px;
+  top: 220px;
   box-sizing: border-box;
   font-family: 'Roboto';
   font-style: normal;
@@ -463,11 +493,15 @@ top: 200px;
 }
 
 .boxtextindex{
-  left:35%;
- height: 300px;
-  top:200px;
-  position: sticky ;
-  width: 600px;
+  
+  height: 300px;
+ 
+ position: absolute;
+  width: 400px;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
   
 }
 .boxtextindex2{
