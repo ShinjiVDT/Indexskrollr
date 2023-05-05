@@ -34,7 +34,7 @@ display: none;
 
 }
 
-.bg {
+.bgnofixed {
   position: relative;
   min-height: 500px;
   ;
@@ -125,21 +125,17 @@ display: none;
 
 }
 
-.containerfotoindex {
-  top: 25%;
-  position: absolute;
-  width: 600px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index: 1;
-}
 
 .rectanglerosa {
   position: absolute;
   width: 400px;
-  left: 40px;
 
+  top: 25%;
+  position: absolute;
+
+  left: 0;
+  right: 120px;
+  margin: auto;
 
 }
 
@@ -345,7 +341,7 @@ display: none;
 
 
 /*-----PANTALLA2----*/
-.pantalla1 {
+.bgindex {
   /*   background: rgba(255,227,239,1); */
 
   min-height: 1000px;
@@ -451,7 +447,7 @@ display: none;
   position: sticky
 }
 
-.textindexa {
+.textline1 {
   margin-left: 20px;
   font-size: 30px;
   top: 160px;
@@ -467,7 +463,7 @@ display: none;
   position: fixed;
 }
 
-.textindexb {
+.textline2 {
   margin-left: 15px;
   position: sticky;
   font-size: 30px;
@@ -484,7 +480,7 @@ display: none;
 
 }
 
-.textindexc {
+.textline3 {
 
   position: sticky;
   font-size: 30px;
@@ -621,13 +617,13 @@ display: none;
   
   }
   
-.textindexa {
+.textline1 {
    font-size: 22px;
 }
-.textindexb {
+.textline2 {
   font-size: 22px;
 }
-.textindexc {
+.textline3 {
   font-size: 22px;
 }
 
@@ -654,7 +650,7 @@ display: inline;
   visibility: hidden;
 }
 
-.bg {
+.bgnofixed {
   position: relative;
   min-height: 500px;
   ;
