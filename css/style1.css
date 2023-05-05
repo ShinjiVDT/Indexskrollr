@@ -155,45 +155,7 @@ display: none;
 
 
 
-
-.rectangle5 {
-  position: absolute;
-  border: none;
-  width: 460px;
-  height: 77.77px;
-  top: 42px;
-  left: -2px;
-  transition: 1s;
-}
-
-.rectangle5mov {
-  left: 100px;
-}
-
-.rectangle6 {
-  border: none;
-
-  position: absolute;
-  width: 75.89px;
-  height: 279.06px;
-  left: 50px;
-  top: -50px;
-  transition: 1s;
-
-}
-
-.rectangle4 {
-  border: none;
-  position: absolute;
-  left: 145px;
-  top: 30px;
-  width: 97.18px;
-  height: 295.8px;
-  z-index: 1;
-  transition: 1s;
-
-
-}
+  
 
 
 
