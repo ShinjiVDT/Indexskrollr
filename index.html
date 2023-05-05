@@ -112,18 +112,32 @@
     </script>
  -->
     <script>
-        var s = skrollr.init();
-        forceHeight: false
-
- /*        function scrollerInit() {
-     $('#skrollr-body').ready(function() {
-       skrollr.init({
+    
+    
+  /*   
+        skrollr.init({
          smoothScrolling: true,
+         forceHeight: true,
          mobileDeceleration:0.004
-       });
-     });
-   } */
-    </script>
+       }); */
+      
+      var s = skrollr.init({
+render: function(data) {
+        
+            console.log(data.curTop);
+        },
+        mobileDeceleration:0.004,
+        smoothScrolling: true,
+        smoothScrollingDuration: 10000,
+                    easing: {
+            WTF: Math.random,
+            inverted: function(p) {
+                return 1-p;
+            }
+        }
+    });
+    </script> 
+    
 </body>
 
 </html>
