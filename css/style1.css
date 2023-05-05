@@ -19,6 +19,13 @@
 .skrollable .skrollable .skrollable {
   position:static;
 }*/
+.desktop{
+  visibility: visible;
+}
+
+.mobile{
+display: none;
+}
 
 #skrollr-body {
   height: 100%;
@@ -108,16 +115,13 @@
 }
 
 .trop {
-  background: linear-gradient(90deg, rgba(210, 153, 197, 0.885), rgba(209, 254, 254, 0.688));
+  background: linear-gradient(90deg, rgba(210, 153, 197, 0.885), rgba(174, 235, 235, 0.88));
   ;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation-name: movfondo;
-  animation-duration: 80s;
-  animation-iteration-count: infinite;
-  background-position: 0%;
-  background-size: 200%;
+
+  background-size: 100%;
 
 }
 
@@ -291,7 +295,6 @@
   flex-wrap: wrap;
   height: 200px;
   width: 100%;
-
   list-style-type: none;
 }
 
@@ -595,21 +598,11 @@
 @media (max-width: 740px) {
   .modal-fullscreen-menu {
     background-color: rgba(25, 21, 22, 0.432);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(4px);
   }
 
   .modal-fullscreen-menu .list-group {
     margin-top: 100px;
-  }
-
-  .modal-fullscreen-menu .list-group a {
-    margin: auto;
-    background-color: transparent;
-    background-image: linear-gradient(90deg, rgba(210, 153, 197, 0.485), rgba(209, 254, 254, 0.388));
-    backdrop-filter: blur(4px);
-    width: 90%;
-    color: white;
-    margin-bottom: 10px;
   }
 
   .list-group {
@@ -645,5 +638,27 @@
 
 
 }
+
+
+
+.mobile{
+display: inline;
+}
+
+.tropmobile{
+  font-size: 60px;
+  
+}
+
+.desktop{
+  visibility: hidden;
+}
+
+.bg {
+  position: relative;
+  min-height: 500px;
+  ;
+  min-width: 100vh;
+  background: transparent}
 
 }
