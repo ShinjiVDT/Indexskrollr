@@ -6,75 +6,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-    <script src="js/wow.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/style1.css">
 
     <title>Document</title>
 </head>
 
 <body>
+    <header>
+        <div class=" modal-fullscreen-menu modal-backdrop" data-0="opacity: 0;" data-4500="opacity: 0;"
+            data-4900="opacity: 1;" data-backdrop="static" role="dialog" tabindex="-1">
 
-    <div  id=”skrollr-body”>
+            <div class="modal-menu  show modal-dialog ">
+                <nav class="list-group">
+                    <a class="list-group-item" data-4700="transform: translateX(500%);"
+                        data-5200="transform: translateX(0%);" href="./fotos.html">FOTOS</a>
+                    <a class="list-group-item" data-4700="transform: translateX(-500%);"
+                        data-5200="transform: translateX(0%); href=" ./bio.html">BIO</a>
+                    <a class="list-group-item" data-4700="transform: translateX(500%);"
+                        data-5200="transform: translateX(0%); href=" ./fechas.html">FECHAS</a>
+                    <a class="list-group-item" data-4700="transform: translateX(-500%);"
+                        data-5200="transform: translateX(0%); href=" ./sonidos.html">SONIDOS</a>
+                    <a class="list-group-item" data-4700="transform: translateX(500%);"
+                        data-5200="transform: translateX(0%); href=" ./contacto.html">CONTACTO</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id=”skrollr-body”>
         <div class="bg">
-
-            <main class="pantalla1" >
-             
+            <main class="pantalla1">
                 <div class="containerfotoindex">
-                    <img class="rectanglerosa" data-0="opacity: 1;" data-1500="opacity: .2;" src="./recursos/index/Rectangle1ROSAFONDO.png" alt="">
-                    <!-- <img class="rectangle1" data-0="transform: translateX(0px);  opacity:1;"
-                        data-150="transform: translateX(200px);  opacity:0;" src="./recursos/index/Rectangle 1.png"
-                        alt="">
-                    <img class="rectangle4" data-0="transform: translateY(0px);  opacity:1;"
-                        data-150="transform: translateY(200px);  opacity:0;" src="./recursos/index/Rectangle 4.png"
-                        alt="">
-                    <img class="rectangle5" data-0="transform: translatex(0px);  opacity:1;"
-                        data-150="transform: translatex(-200px);  opacity:0;" src="./recursos/index/Rectangle 5.png"
-                        alt="">
-                    <img class="rectangle6" data-0="transform: translatey(0px);  opacity:1;"
-                        data-150="transform: translatey(-200px);  opacity:0;" src="./recursos/index/Rectangle 6.png"
-                        alt=""> -->
+                    <img class="rectanglerosa" data-0="opacity: 1;" data-3300="opacity: .2;"
+                        src="./recursos/index/Rectangle1ROSAFONDO.png" alt="">
                 </div>
                 <div class="boxtextindex">
                     <!-- <p class="textindex2" data-200=" opacity:0;" data-640="opacity:0;" data-650="opacity:1; color: rgba(254, 254, 254, 0.897); ;
             font-size: 30px;" data-1400="opacity:1; color: rgba(254, 254, 254, 0.897);;
             font-size: 30px;" data-1500="opacity:1; color: rgba(100, 100, 100, 100.897);" data-1600="opacity:1; color: rgba(0, 0, 0, 0.897); font-weight: 400;
             font-size: 55px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; trópico</p> -->
-                    <p class="textindexa " data-350="width:0%; opacity:0; color: rgba(32, 30, 30, 0.897);"
-                        data-500="width:100%; opacity:1;" >
-                        <span  data-850="opacity:1;" data-950="opacity:0;" >"En el
+                    <p class="textindexa " data-300="width:0%; opacity:0; color: rgba(32, 30, 30, 0.897);"
+                        data-1500="width:100%; opacity:1;">
+                        <span data-2300="opacity:1;" data-3300="opacity:0;">"En el
                         </span>
-                        <span data-1200="opacity:1;" data-1400="opacity:0;"  >trópico
-                        </span>  
-                        <span data-450="width:0%; opacity:0; color: rgba(32, 30, 30, 0.897);"
-                            data-530="width:100%; opacity:1;" data-850="opacity:1;" data-950="opacity:0;">el
+                        <span data-2800="opacity:1;" data-3400="opacity:0;">trópico
+                        </span>
+                        <span data-2300="opacity:1;" data-3300="opacity:0;">el
                             tiempo
                         </span>
-                        <p class="textindexa " >
-                        <span  data-850="opacity:0;" data-950="opacity:0;" >"En el
+                    <p class="textindexa ">
+                        <span data-850="opacity:0;" data-1950="opacity:0;">"En el
                         </span>
-                        <span class="trop" data-850="opacity:0;" data-900="font-size:30px;"
-                        data-1350="opacity:1"
-                        data-1600="font-size:70px">trópico
-                        </span>  
-                            
+                        <span class="trop" data-2850="opacity:0; font-size:30px;" data-3300="opacity:1"
+                            data-3600="font-size:70px">trópico
+                        </span>
+
                     </p>
                     <p class="textindexb " data-530="width:0%; opacity:0; color: rgba(32, 30, 30, 0.897);"
-                        data-610="width:100%; opacity:1;" data-850="opacity:1;" data-950="opacity:0;">no es una
+                        data-1610="width:100%; opacity:1;" data-2300="opacity:1;" data-3300="opacity:0;">no es una
                         medida
                         precisa</p>
-                    <p class="textindexc " data-610="width:0%; opacity:0; color: rgba(32, 30, 30, 0.897);"
-                        data-790="width:100%; opacity:1;" data-850="opacity:1;" data-950="opacity:0;"> sino una
+                    <p class="textindexc " data-1410="width:0%; opacity:0; color: rgba(32, 30, 30, 0.897);"
+                        data-2290="width:100%; opacity:1;" data-2300="opacity:1;" data-3300="opacity:0;"> sino una
                         emoción imprecisa" </p>
-                        <h1 class="galaxia" data-1300="opacity:0;" data-1600="opacity:1;">GALAXIA</h1>
+                    <h1 class="galaxia" data-3300="opacity:0;" data-3800="opacity:1;">GALAXIA</h1>
                     <!-- 
                 <p class="textindex1" data-800="width:0%; opacity:0;" data-1000="width:100%; opacity:1;">"En el trópico,
                     el
                     tiempo no es una medida precisa, sino una emoción imprecisa" </p> -->
                 </div>
             </main>
-           
+
             <footer class="foot">
                 <ul class="listfoot">
                     <li><a href="#"><img class="iconos" src="./recursos/Icons/spotify.svg" alt="iconos de Spotify"></a>
@@ -90,7 +96,7 @@
         </div>
     </div>
 
-<!--     <script>
+    <!--     <script>
         function myFunction() {
 
             const headeri = document.querySelector(".headeri");
@@ -112,32 +118,41 @@
     </script>
  -->
     <script>
-    
-    
-  /*   
-        skrollr.init({
-         smoothScrolling: true,
-         forceHeight: true,
-         mobileDeceleration:0.004
-       }); */
-      
-      var s = skrollr.init({
-render: function(data) {
-        
-            console.log(data.curTop);
-        },
-        mobileDeceleration:0.004,
-        smoothScrolling: true,
-        smoothScrollingDuration: 10000,
-                    easing: {
-            WTF: Math.random,
-            inverted: function(p) {
-                return 1-p;
+
+
+        /*   
+              skrollr.init({
+               smoothScrolling: true,
+               forceHeight: true,
+               mobileDeceleration:0.004
+             }); */
+
+        var s = skrollr.init({
+            render: function (data) {
+
+                console.log(data.curTop);
+            },
+            forceHeight: true,
+            smoothScrolling: true,
+            smoothScrollingDuration: 1000,
+            easing: {
+                WTF: Math.random,
+                inverted: function (p) {
+                    return 1 - p;
+                }
             }
-        }
-    });
-    </script> 
-    
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

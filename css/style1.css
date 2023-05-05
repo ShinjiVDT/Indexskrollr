@@ -28,9 +28,9 @@
 }
 .bg {
 position: relative;
-  min-height: 150vh;
+min-height: 500px;;
   min-width: 100vh;
- background-image: linear-gradient(0deg, rgba(210, 190, 153, .1) 5%,  rgba(209, 254, 254, 1)100%,rgb(109, 216, 207) );
+ background-image: linear-gradient(0deg, rgba(210, 153, 202, 0) 5%,  rgba(209, 254, 254, 1)100%,rgb(109, 216, 207) );
 }
 
 .tropico {
@@ -120,13 +120,13 @@ position: relative;
 }
 
 .containerfotoindex {
-top: 15%;
+top: 25%;
 position: absolute;
 width: 600px;
 left: 0; 
 right: 0; 
 margin: auto; 
-z-index: -1;  
+z-index: 1;  
 }
 
 .rectanglerosa{
@@ -342,16 +342,17 @@ z-index: -1;
 .pantalla1{
 /*   background: rgba(255,227,239,1); */
   
-  min-height: 2000px;
+  min-height: 1000px;
   min-width: 100%;
   position: fixed;
-  background: hsla(334, 100%, 95%, 1);
+
 
 background: linear-gradient(90deg, hsla(334, 100%, 95%, 1) 80%, hsla(180, 96%, 91%, 1) 100%);
 
 background: -moz-linear-gradient(90deg, hsla(334, 100%, 95%, 1) 80%, hsla(180, 96%, 91%, .5) 100%);
 
 background: -webkit-linear-gradient(90deg, hsla(334, 100%, 95%, 1) 80%, hsla(180, 96%, 91%, .5) 100%);
+z-index: -1;
 }
 
 .pantalla2{
@@ -494,13 +495,13 @@ background: -webkit-linear-gradient(90deg, hsla(334, 100%, 95%, 1) 80%, hsla(180
 .boxtextindex{
   
   height: 300px;
- 
+
  position: absolute;
   width: 400px;
   left: 0; 
   right: 0; 
   margin-left: auto; 
-  margin-right: auto; 
+  margin: auto; 
   
 }
 .boxtextindex2{
@@ -526,3 +527,68 @@ background: -webkit-linear-gradient(90deg, hsla(334, 100%, 95%, 1) 80%, hsla(180
   	overflow: hidden;
 }
 
+
+
+
+
+
+.modal-fullscreen-menu {
+  backdrop-filter: grayscale(90%);
+  background-color: rgba(25, 21, 22, 0.832); }
+  .modal-fullscreen-menu .list-group {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 60px; }
+    .modal-fullscreen-menu .list-group a {
+      margin:auto;
+      font-size: 200%;
+      font-weight: 200;
+      letter-spacing: 0.1em;
+      border: none;
+      transition: all 0.25s ease;
+      background-color: transparent;
+        background-image: linear-gradient(90deg, rgba(210, 153, 197, 0.585), rgba(209, 254, 254, 0.488));
+        backdrop-filter: blur 5px;
+      color: white;
+      padding: 7.5vh 0;
+      height: 5vh;
+      font-size: 5vh;
+      line-height: 0; 
+    width: 50vh;
+    margin-bottom: 5px;
+    }
+      
+      .modal-fullscreen-menu .list-group a:hover {
+        color: black; }
+        
+
+
+
+
+@media only screen and (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(104, 104, 104, 0.9);
+    z-index: 1000; } }
+
+
+.modal-dialog {
+  pointer-events: all !important; }
+
+
+
+
+@media (max-width: 740px) {
+  .modal-fullscreen-menu {
+    background-color: rgba(25, 21, 22, 0.432);
+    backdrop-filter: blur(6px); }
+    .modal-fullscreen-menu .list-group {
+      margin-top: 100px; }
+      .modal-fullscreen-menu .list-group a {
+        margin: auto;
+        background-color: transparent;
+        background-image: linear-gradient(90deg, rgba(210, 153, 197, 0.485), rgba(209, 254, 254, 0.388));
+        backdrop-filter: blur(4px);
+        width: 90%;
+        color: white;
+        margin-bottom: 10px; } }
