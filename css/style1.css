@@ -34,7 +34,7 @@ display: none;
 
 }
 
-.bgnofixed {
+.bg {
   position: relative;
   min-height: 500px;
   ;
@@ -125,17 +125,21 @@ display: none;
 
 }
 
+.containerfotoindex {
+  top: 25%;
+  position: absolute;
+  width: 600px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
 
 .rectanglerosa {
   position: absolute;
   width: 400px;
+  left: 40px;
 
-  top: 25%;
-  position: absolute;
-
-  left: 0;
-  right: 120px;
-  margin: auto;
 
 }
 
@@ -341,7 +345,7 @@ display: none;
 
 
 /*-----PANTALLA2----*/
-.bgindex {
+.pantalla1 {
   /*   background: rgba(255,227,239,1); */
 
   min-height: 1000px;
@@ -447,7 +451,7 @@ display: none;
   position: sticky
 }
 
-.textline1 {
+.textindexa {
   margin-left: 20px;
   font-size: 30px;
   top: 160px;
@@ -463,7 +467,7 @@ display: none;
   position: fixed;
 }
 
-.textline2 {
+.textindexb {
   margin-left: 15px;
   position: sticky;
   font-size: 30px;
@@ -480,7 +484,7 @@ display: none;
 
 }
 
-.textline3 {
+.textindexc {
 
   position: sticky;
   font-size: 30px;
@@ -617,13 +621,13 @@ display: none;
   
   }
   
-.textline1 {
+.textindexa {
    font-size: 22px;
 }
-.textline2 {
+.textindexb {
   font-size: 22px;
 }
-.textline3 {
+.textindexc {
   font-size: 22px;
 }
 
@@ -650,7 +654,7 @@ display: inline;
   visibility: hidden;
 }
 
-.bgnofixed {
+.bg {
   position: relative;
   min-height: 500px;
   ;
