@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;800&family=Roboto+Mono:wght@100;300;400;500;700&family=Roboto+Slab:wght@200;300;400&family=Roboto:wght@100;300;400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -61,14 +63,14 @@ display: none;
   width: 431px;
   height: 64px;
   box-sizing: border-box;
-  font-family: 'Roboto';
+ font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 100;
   font-size: 55px;
   line-height: 64px;
   font-variant: small-caps;
   text-align: center;
-  color: #9C9C9C;
+  color: #929292;
   width: 250px;
 
   margin-left: 20px;
@@ -125,6 +127,10 @@ display: none;
 
 }
 
+.tropicoroboto{
+  font-family: 'Roboto', sans-serif;
+}
+
 .containerfotoindex {
   top: 25%;
   position: absolute;
@@ -137,7 +143,7 @@ display: none;
 
 .rectanglerosa {
   position: absolute;
-  width: 400px;
+  width: 65%;
   left: 40px;
 
 
@@ -449,53 +455,54 @@ display: none;
 
 .textsticky {
   position: sticky
-}
+} 
 
 .indexline1 {
   margin-left: 20px;
-  font-size: 30px;
+  font-size: 35px;
   top: 160px;
   box-sizing: border-box;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 3px;
   font-style: normal;
-  /* line-height: 64px; */
+  
   font-variant: small-caps;
-  color: rgba(60, 58, 48, 0.53);
-  /*height: 80px;*/
+  color: rgba(60, 58, 48, 0.8);
+  
   white-space: nowrap;
   overflow: hidden;
-  position: fixed;
+  position: absolute;
 }
 
 .indexline2 {
+  letter-spacing: 3px;
   margin-left: 15px;
-  position: sticky;
-  font-size: 30px;
+  position: absolute;
+  font-size: 35px;
   top: 190px;
   box-sizing: border-box;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
-  /* line-height: 64px; */
+
   font-variant: small-caps;
-  color: rgba(60, 58, 48, 0.53);
-  /*height: 80px;*/
+  color: rgba(60, 58, 48, 0.8);
+ 
   white-space: nowrap;
   overflow: hidden;
 
 }
 
 .indexline3 {
-
-  position: sticky;
-  font-size: 30px;
+  letter-spacing: 3px;
+  position: absolute;
+  font-size: 35px;
   top: 220px;
   box-sizing: border-box;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
-  /* line-height: 64px; */
   font-variant: small-caps;
-  color: rgba(60, 58, 48, 0.53);
-  /*height: 80px;*/
+  color: rgba(60, 58, 48, 0.8);
+  
   white-space: nowrap;
   overflow: hidden;
 
@@ -503,9 +510,9 @@ display: none;
 
 .boxtextindex {
 
-  height: 300px;
-  position: absolute;
-  width: 400px;
+  height: 200px;
+  position: relative;
+  width: 455px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -593,7 +600,105 @@ display: none;
 }
 
 
+/*mousescroll*/
 
+.mouse-scroll {
+  position: fixed;
+  left: 50%;
+  bottom: 90px;
+  z-index: 1;
+}
+.mouse-scroll span{
+  display: block;
+  width: 5px; 
+  height: 5px;
+
+ 
+       transform: rotate(45deg);
+  border-right: 2px solid #5f7480; 
+  border-bottom: 2px solid #5f7480; 
+  margin: 0 0 3px 5px;
+}
+.mouse-scroll .mouse {
+  height: 21px;
+  width: 14px;
+  border-radius: 10px;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  border: 2px solid #5f7480;
+  top: 170px;
+}
+.mouse-scroll .down-arrow-1 {
+  margin-top: 6px;
+}
+.mouse-scroll .down-arrow-1, .mouse-scroll .down-arrow-2, .mouse-scroll .down-arrow-3 {
+  animation: mouse-scroll 1s infinite; 
+    animation: mouse-scroll 1s infinite;
+}
+#mouse-croll .down-arrow-1 {
+  animation-delay: .1s; 
+   
+   animation-direction: alternate;
+}
+.mouse-scroll .down-arrow-2 {
+  
+  animation-delay: .2s;
+  animation-direction: alternate;
+}
+.mouse-scroll .down-arrow-3 {
+   animation-delay: .3s;
+  
+   animation-direction: alternate;
+}
+.mouse-scroll .mouse-in {
+  height: 5px;
+  width: 2px;
+  display: block; 
+  margin: 5px auto;
+  background: #5f7480;
+  position: relative;
+}
+.mouse-scroll .mouse-in {
+ animation: animated-mouse 1.2s ease infinite;
+}
+
+@keyframes animated-mouse {  0% {
+
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+     opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  } 
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 @media (max-width: 740px) {
   .modal-fullscreen-menu {
@@ -633,10 +738,8 @@ display: none;
 
 
 .rectanglerosa {
-
+  top: 20px;
   left: 0px;
-
-
 }
 
 
