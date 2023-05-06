@@ -413,7 +413,7 @@ display: none;
   position: sticky
 }
 
-.textindexa {
+.textline1 {
   margin-left: 20px;
   font-size: 30px;
   top: 160px;
@@ -429,9 +429,9 @@ display: none;
   position: fixed;
 }
 
-.textindexb {
+.textline2 {
   margin-left: 15px;
-  position: sticky;
+  position: fixed;
   font-size: 30px;
   top: 190px;
   box-sizing: border-box;
@@ -442,13 +442,14 @@ display: none;
   color: rgba(60, 58, 48, 0.53);
   /*height: 80px;*/
   white-space: nowrap;
-  overflow: hidden;
+  
+
 
 }
 
-.textindexc {
+.textline3 {
 
-  position: sticky;
+  position: fixed;
   font-size: 30px;
   top: 220px;
   box-sizing: border-box;
@@ -477,7 +478,6 @@ display: none;
 
 .boxtextindex2 {
   left: 35%;
-
   top: 1200px;
   position: sticky;
   width: 600px;

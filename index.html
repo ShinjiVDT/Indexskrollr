@@ -36,7 +36,7 @@
                 </nav>
             </div>
         </div>
-  
+
         <div class="desktop modal-fullscreen-menu modal-backdrop" data-0="opacity: 0;" data-4800="opacity: 0;"
             data-4900="opacity: 1;" data-backdrop="static" role="dialog" tabindex="-1">
 
@@ -57,57 +57,59 @@
         </div>
     </header>
 
-    <div id=”skrollr-body”>
-        <div class="bg">
-            <main class=" pantalla1">
-                <div class="containerfotoindex">
-                    <img class="rectanglerosa" data-0="opacity: 1;" data-3300="opacity: .2;"
-                        src="./recursos/index/Rectangle1ROSAFONDO.png" alt="">
-                </div>
-                <div class="boxtextindex">
-                    <p class="desktop textindexa " data-200="width:0%; color: rgba(32, 30, 30, 0.897);" data-1200="width:100%;"  >
-                        <span  data-200=" opacity:0;"  data-500=" opacity:1;" data-2300="opacity:1;" data-3300="opacity:0;">"En el
-                        </span>
-                        <span  data-400=" opacity:0;"  data-600=" opacity:1;" data-2500="opacity:1;" data-3000="opacity:0;">trópico
-                        </span>
-                        <span  data-500= "opacity:0;"   data-1200=" opacity:1;" data-2300="opacity:1;" data-3300="opacity:0;">el
-                            tiempo
-                        </span>
-                    <p class="textindexa ">
-                        <span data-850="opacity:0;" data-1950="opacity:0;">"En el
-                        </span>
-                        <span class=" mobile trop tropmobile " >trópico
+
+    <div class=".bgnofixed">
+        <main class=" bgindex">
+            <img class="rectanglerosa" data-0="opacity: 1;" data-3300="opacity: .2;"
+                src="./recursos/index/Rectangle1ROSAFONDO.png" alt="">
+
+            <div class="boxtextindex">
+                <p class="desktop textline1" data-200="width:0%; color: rgba(32, 30, 30, 0.897);"
+                    data-1200="width:100%;">
+                    <span data-200="opacity:0;" data-500=" opacity:1; " data-2300="opacity:1;"
+                        data-3300="opacity:0;">"En el
                     </span>
-                        <span class="desktop trop" data-2850="opacity:0; font-size:30px;" data-3000="opacity:1"
-                            data-3600="font-size:70px">trópico
-                        </span>
+                    <span data-400="opacity:0;" data-600=" opacity:1;" data-2500="opacity:1;"
+                        data-3000="opacity:0;">trópico
+                    </span>
+                    <span data-500="opacity:0;" data-1200="opacity:1;" data-2300="opacity:1;" data-3300="opacity:0;">el
+                        tiempo
+                    </span>
+                </p>
+                <p class="textline1 ">
+                    <span data-850="opacity:0;" data-1950="opacity:0;">"En el
+                    </span>
+                    <span class="mobile trop tropmobile ">trópico
+                    </span>
+                    <span class="desktop trop" data-2850="opacity:0; font-size:30px;" data-3000="opacity:1"
+                        data-3600="font-size:70px">trópico
+                    </span>
 
-                    </p>
-                    <p class="desktop textindexb  " data-530="width:0%; opacity:0; color: rgba(32, 30, 30, 0.897);"
-                        data-1610="width:100%; opacity:1;" data-2300="opacity:1;" data-3300="opacity:0;">no es una
-                        medida
-                        precisa</p>
-                    <p class="desktop textindexc " data-1410="width:0%; opacity:0; color: rgba(32, 30, 30, 0.897);"
-                        data-2290="width:100%; opacity:1;" data-2300="opacity:1;" data-3300="opacity:0;"> sino una
-                        emoción imprecisa" </p>
-                        <h1 class="galaxia mobile" >GALAXIA</h1>
-                    <h1 class="desktop galaxia" data-3300="opacity:0;" data-3800="opacity:1;">GALAXIA</h1>
-                </div>
-            </main>
-            <footer class="foot">
-                <ul class="listfoot">
-                    <li><a href="#"><img class="iconos" src="./recursos/Icons/spotify.svg" alt="iconos de Spotify"></a>
-                    </li>
+                </p>
+                <p class="desktop textline2" data-530="width:0%; opacity:0; color: rgba(32, 30, 30, 0.897);"
+                    data-1610="width:100%; opacity:1;" data-2300="opacity:1;" data-3300="opacity:0;">no es una
+                    medida
+                    precisa</p>
+                <p class="desktop textline3" data-1410="width:0%; opacity:0; color: rgba(32, 30, 30, 0.897);"
+                    data-2290="width:100%; opacity:1;" data-2300="opacity:1;" data-3300="opacity:0;"> sino una
+                    emoción imprecisa"</p>
+                <h1 class="galaxia mobile">GALAXIA</h1>
+                <h1 class="desktop galaxia" data-3300="opacity:0;" data-3800="opacity:1;">GALAXIA</h1>
+            </div>
+        </main>
+        <footer class="foot">
+            <ul class="listfoot">
+                <li><a href="#"><img class="iconos" src="./recursos/Icons/spotify.svg" alt="iconos de Spotify"></a>
+                </li>
 
-                    <li><a href="#"><img class="iconos" src="./recursos/Icons/youtube.svg" alt="icono de Youtube"></a>
-                    </li>
-                    <li><a href="#"><img class="iconos" src="./recursos/Icons/instagram.svg"
-                                alt="icono de Instagram"></a>
-                    </li>
-                </ul>
-            </footer>
-        </div>
+                <li><a href="#"><img class="iconos" src="./recursos/Icons/youtube.svg" alt="icono de Youtube"></a>
+                </li>
+                <li><a href="#"><img class="iconos" src="./recursos/Icons/instagram.svg" alt="icono de Instagram"></a>
+                </li>
+            </ul>
+        </footer>
     </div>
+
 
     <!--     <script>
         function myFunction() {
@@ -133,32 +135,32 @@
     <script>
 
 
-           
-              var s = skrollr.init({
-               
-               mobileDeceleration:0.004
-             }); 
 
-       /* 
-       smoothScrolling: true,
-               forceHeight: true,
+        var s = skrollr.init({
 
-       var s = skrollr.init({
-            render: function (data) {
+            mobileDeceleration: 0.004
+        });
 
-                console.log(data.curTop);
-            },
-            mobileDeceleration:0.004,
-            forceHeight: true,
-            smoothScrolling: true,
-            smoothScrollingDuration: 1000,
-            easing: {
-                WTF: Math.random,
-                inverted: function (p) {
-                    return 1 - p;
-                }
-            }
-        }); */
+        /*
+        smoothScrolling: true,
+                forceHeight: true,
+ 
+        var s = skrollr.init({
+             render: function (data) {
+ 
+                 console.log(data.curTop);
+             },
+             mobileDeceleration:0.004,
+             forceHeight: true,
+             smoothScrolling: true,
+             smoothScrollingDuration: 1000,
+             easing: {
+                 WTF: Math.random,
+                 inverted: function (p) {
+                     return 1 - p;
+                 }
+             }
+         }); */
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
