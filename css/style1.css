@@ -155,7 +155,45 @@ display: none;
 
 
 
-  
+
+.rectangle5 {
+  position: absolute;
+  border: none;
+  width: 460px;
+  height: 77.77px;
+  top: 42px;
+  left: -2px;
+  transition: 1s;
+}
+
+.rectangle5mov {
+  left: 100px;
+}
+
+.rectangle6 {
+  border: none;
+
+  position: absolute;
+  width: 75.89px;
+  height: 279.06px;
+  left: 50px;
+  top: -50px;
+  transition: 1s;
+
+}
+
+.rectangle4 {
+  border: none;
+  position: absolute;
+  left: 145px;
+  top: 30px;
+  width: 97.18px;
+  height: 295.8px;
+  z-index: 1;
+  transition: 1s;
+
+
+}
 
 
 
@@ -413,7 +451,7 @@ display: none;
   position: sticky
 }
 
-.textline1 {
+.indexline1 {
   margin-left: 20px;
   font-size: 30px;
   top: 160px;
@@ -429,9 +467,9 @@ display: none;
   position: fixed;
 }
 
-.textline2 {
+.indexline2 {
   margin-left: 15px;
-  position: fixed;
+  position: sticky;
   font-size: 30px;
   top: 190px;
   box-sizing: border-box;
@@ -442,14 +480,13 @@ display: none;
   color: rgba(60, 58, 48, 0.53);
   /*height: 80px;*/
   white-space: nowrap;
-  
-
+  overflow: hidden;
 
 }
 
-.textline3 {
+.indexline3 {
 
-  position: fixed;
+  position: sticky;
   font-size: 30px;
   top: 220px;
   box-sizing: border-box;
@@ -478,6 +515,7 @@ display: none;
 
 .boxtextindex2 {
   left: 35%;
+
   top: 1200px;
   position: sticky;
   width: 600px;
@@ -583,13 +621,13 @@ display: none;
   
   }
   
-.textindexa {
+.indexline1 {
    font-size: 22px;
 }
-.textindexb {
+.indexline2 {
   font-size: 22px;
 }
-.textindexc {
+.indexline3 {
   font-size: 22px;
 }
 
